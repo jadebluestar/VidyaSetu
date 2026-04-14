@@ -28,20 +28,9 @@ VidyaSetu is a full-stack web application that helps students evaluate study-abr
 ```
 
 ## System Architecture
+<img width="1165" height="2102" alt="vidyasetu_architecture" src="https://github.com/user-attachments/assets/696f4234-3b4f-475a-bf7d-ac0008e3180a" />
 
-```mermaid
-flowchart LR
-    U[User Browser] --> F[Next.js Frontend\nPort 3000]
-    F --> NAPI[Next.js API Routes\n/frontend/app/api/*]
-    NAPI --> B[Flask Backend\nPort 5000]
-    B --> OR[OpenRouter API]
-    OR --> LLM[Configured LLM Model]
-    LLM --> OR
-    OR --> B
-    B --> NAPI
-    NAPI --> F
-    F --> U
-```
+
 
 ## API Flow
 
